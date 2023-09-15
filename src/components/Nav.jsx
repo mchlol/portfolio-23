@@ -6,7 +6,7 @@ export default function Nav() {
         <nav>
             <div>
                 <h2>mchlol</h2>
-                <p>Digital Developer</p>
+                <span className="description">Digital Developer</span>
             </div>
             <ul>
                 <li><a href="https://github.com/mchlol" target="_blank">G</a></li>
