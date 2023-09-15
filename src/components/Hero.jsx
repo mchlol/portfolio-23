@@ -3,19 +3,22 @@ import peepImage from '../assets/peepImage.png';
 
 export default function Hero() {
     return (
-        <div className="hero cols-2">
+        <div className="hero segmented">
             <div className="imgSide">
-                <h1>Salut!</h1>
-                <img src={peepImage} alt="an illustration of a grinning girl with long dark hair and a pink sweater" />
+                <img src={peepImage} alt="an open peep illustration of a grinning girl with long dark hair and a pink sweater" />
             </div>
 
             <div className="textSide">
-                <p>
-                    Hello, I'm Michelle, a digital developer in Melbourne, Australia. 
+                <h1>Salut!</h1>
+                <p>Hello, I'm Michelle, a digital developer in Melbourne, Australia.</p>
+
+                <p>I specialise in building user interfaces for the web.<br />
+                Right now I am really enjoying working with React and displaying data from APIs.
                 </p>
-                <p>
-                    I'm learning to build for the web. Right now I'm really enjoying working with React and APIs. Check out a few of my projects below!
-                </p>
+
+                <p>Check out a few of my projects below!</p>
+
+                <p>I am always happy to connect with new people. Feel free to follow me on Twitter! </p>
             </div>
                 
         </div>

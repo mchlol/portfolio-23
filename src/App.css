@@ -14,7 +14,6 @@ html {
 }
 
 #root {
-  max-width: 1280px;
   margin: 0;
 }
 
@@ -23,23 +22,26 @@ html {
 
 body {
   font-family: var(--Noto);
+  margin: 0;
+  background: var(--grey);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh;
-  width: 100%;
-  padding: 0 1em;
-  border: 1px solid var(--salmon);
-  position: fixed;
-  top: 0;
-  left: 0;
+  max-height: 10vh;
+  margin: 0;
+  padding: 1em;
+  background: var(--salmon);
 }
 
 nav div * {
   margin: 0;
+}
+
+nav h2 {
+  font-size: 2rem;
 }
 
 nav ul {
@@ -55,22 +57,56 @@ h1,
 h2,
 h3 {
   font-family: var(--DMserif);
-}
-
-.hero {
-  padding: 1em;
+  color: var(--purple);
 }
 
 .hero img {
-  max-width: 50%;
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
 }
 
-.cols-2 {
+.segmented {
   display: flex;
-  flex-direction: row wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 1em;
+  margin: 0 auto;
+  max-width: 80%;
+  /* height: calc(100vh - 6vh); */
 }
 
-.cols-2 div {
-  border: 1px solid red;
+.segmented div {
+  border: 3px dashed black;
+}
+
+.textSide {
+  max-width: calc(400px - 2em);
+  padding: 1em;
+  margin: 1em;
+}
+
+.imgSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  background: var(--purple);
+  margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .segmented {
+    height: fit-content;
+    /* flex-direction: column; */
+    flex-wrap: wrap-reverse;
+
+  }
+
+  .imgSide,
+  .textSide {
+    width: auto;
+  }
 }
