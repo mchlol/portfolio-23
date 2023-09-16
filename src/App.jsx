@@ -5,6 +5,7 @@ import './App.css'
 import Nav from './components/nav'
 import Hero from './components/Hero'
 import SkillsMarquee from './components/SkillsMarquee'
+import Projects from './components/Projects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <Hero />
       <SkillsMarquee />
+      <Projects />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

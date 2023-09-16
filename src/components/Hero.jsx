@@ -17,8 +17,7 @@ export default function Hero() {
                 </p>
 
                 <p>Check out a few of my projects below!</p>
-
-                <p>I am always happy to connect with new people. Feel free to follow me on Twitter! </p>
+                
             </div>
                 
         </div>
