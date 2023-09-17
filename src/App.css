@@ -50,11 +50,24 @@ nav h2 {
 
 nav ul {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  gap: 2em;
   list-style-type: none;
   margin: 0 2em;
   padding: 0;
+}
+
+nav li {
+  margin: 1em;
+  padding: 1em;
+}
+
+.social-icon {
+  max-width: 25px;
+}
+
+.social-icon:hover {
+  opacity: 0.75;
 }
 
 h1,
@@ -140,6 +153,16 @@ button:hover {
 
 
 @media screen and (max-width: 768px) {
+
+  nav ul {
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0.25em;
+    padding: 0;
+  }
+
   .segmented {
     display: flex;
     flex-direction: column;
