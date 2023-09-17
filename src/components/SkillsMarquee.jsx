@@ -15,6 +15,8 @@ export default function SkillsMarquee() {
             <span className="marquee-item">JavaScript</span>
             <span className="marquee-item">Git</span>
             <span className="marquee-item">Sass</span>
+            <span className="marquee-item">Flexbox</span>
+            <span className="marquee-item">CSS Grid</span>
             <span className="marquee-item">React</span>
             <span className="marquee-item">Node</span>
             <span className="marquee-item">Tailwind</span>

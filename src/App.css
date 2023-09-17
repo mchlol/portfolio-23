@@ -17,6 +17,9 @@ html {
   margin: 0;
 }
 
+a {
+  font-weight: bold;
+}
 
 /* custom styles */
 
@@ -34,7 +37,7 @@ nav {
   margin: 0;
   padding: 1em;
   background: var(--salmon);
-  border-bottom: 3px solid black;
+  border: 2px solid black;
 }
 
 nav div * {
@@ -70,7 +73,11 @@ h3 {
 .segmented {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
+}
+
+.segmented div {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .textSide {
@@ -83,7 +90,6 @@ h3 {
   justify-content: center;
   align-items: center;
   background: var(--purple);
-  border: 2px solid black;
   padding: 1.5em;
 }
 
@@ -94,7 +100,8 @@ h3 {
   padding: 1em;
   gap: 2em;
   font-family: var(--DMserif);
-  border: 3px solid black;
+  border: 2px solid black;
+  width: auto !important;
 }
 
 .marquee-item {
@@ -121,6 +128,13 @@ button:hover {
 
   .textSide {
     flex-grow: 1;
+  }
+}
+
+@media (min-width: 1420px) {
+  #root {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
