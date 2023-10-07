@@ -16,10 +16,6 @@ html {
   margin: 0;
 }
 
-a {
-  font-weight: bold;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -34,6 +30,16 @@ h1 {
 }
 
 /* custom styles */
+
+a {
+  font-weight: bold;
+  color: #000;
+  text-decoration-style: wavy;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 body {
   font-family: var(--Noto);
@@ -84,11 +90,6 @@ h4 {
   font-family: var(--DMserif);
 }
 
-.hero {
-  position: relative;
-
-}
-
 .hero--content {
   margin: 2em;
   display: flex;
@@ -97,12 +98,14 @@ h4 {
   align-items: center;
 }
 
-.hero svg {
-  position: absolute;
-  top: -200px;
+.blob--container {
+  align-self: center;
+  position: fixed;
+  width: 100%;
+  /* top: -100px; */
   opacity: 0.5;
   z-index: -1;
-  min-width: 400px;
+  overflow: hidden;
 }
 
 .hero img {
@@ -138,6 +141,9 @@ button:hover {
 
 footer {
   background-color: var(--accent);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 /* ## MEDIA QUERIES ## */

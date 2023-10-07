@@ -13,10 +13,6 @@ function App() {
     <>
       <Nav />
       <Hero />
-      <Projects />
-      {/* <SkillsMarquee 
-        skills = {['HTML','CSS','JavaScript','Git','Flexbox','CSS Grid','React','Node','Tailwind','Bootstrap','WordPress', 'Sass']}
-      /> */}
       <Footer />
     </>
   )
