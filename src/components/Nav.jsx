@@ -11,9 +11,9 @@ export default function Nav() {
                 <h2>mchlol</h2>
             </div>
             <ul>
-                <li><a href="https://github.com/mchlol" target="_blank"><img className="social-icon" src={githubLogo} alt="github logo" /></a></li>
-                <li><a href="https://www.linkedin.com/in/michellebrown01/" target="_blank"><img className="social-icon" src={linkedinLogo} alt="linkedin logo" /></a></li>
-                <li><a href="https://twitter.com/mchlol" target="_blank"><img className="social-icon" src={XtwitterLogo} alt="X logo" /></a></li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </nav>
     )

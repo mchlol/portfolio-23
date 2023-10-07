@@ -36,3 +36,10 @@ Aside: can you find Unsplash images by colour...?
 I'll mix it up a little from using gh-pages and use Netlify again. I think it's also time to look into getting my own url.  
 
 I'm excited! Let's get to work!  
+
+## TODO
+
+- Polish up and add some more projects
+- Create a side scroll for the projects section - view more on each project will take the user to a page with more detail about the project. I need to get better at writing readmes as I go...
+- Contact section - look up some ways to make this look more interesting (Dribbble, Behance)
+- add the company WordPress as a project
