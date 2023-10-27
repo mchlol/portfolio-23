@@ -63,7 +63,7 @@ nav ul,
 footer ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   margin: 0 2em;
   padding: 0;
@@ -108,21 +108,11 @@ h4 {
   overflow: hidden;
 }
 
-.hero img {
+.hero-img {
   object-fit: contain;
   object-position: center;
-  max-width: 100%;
-}
-
-.marqueeContainer {
-  padding: 1em;
-  gap: 2em;
-  font-family: var(--DMserif);
-  width: auto !important;
-}
-
-.marquee-item {
-  margin: 2em;
+  max-width: 50%;
+  filter: grayscale(1);
 }
 
 .project-screenshot {
