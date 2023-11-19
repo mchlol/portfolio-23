@@ -2,7 +2,7 @@ import React from "react";
 import SparksSmall from '../assets/sparks-small.png'
 import { FaFigma } from "react-icons/fa6";
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiVisualstudio, DiGit, DiGithubBadge } from "react-icons/di";
-import { SiNextdotjs, SiDaisyui, SiTailwindcss, SiWordpress, SiNotion } from "react-icons/si";
+import { SiNextdotjs, SiDaisyui, SiTailwindcss, SiWordpress, SiNotion, SiNetlify } from "react-icons/si";
 import { FiTerminal } from "react-icons/fi";
 
 
@@ -41,7 +41,7 @@ export default function Hero() {
                     <span><FiTerminal /> iTerm</span>
                     <span><FaFigma /> Figma</span>
                     <span><SiNotion /> Notion</span>
-
+                    <span><SiNetlify /> Netlify</span>
                     <span><SiWordpress /> WordPress</span>
                     <span><SiNextdotjs /> Next</span>
                 </div>
