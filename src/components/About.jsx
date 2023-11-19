@@ -2,7 +2,7 @@ import BlobPic from '../assets/mask-group.png'
 import React from "react";
 
 import SparksSmall from '../assets/sparks-small.png'
-import Sparks from '../assets/sparks.png'
+import Sparks from '../assets/Sparks.png'
 
 export default function About() {
     return (
