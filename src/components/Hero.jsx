@@ -1,23 +1,27 @@
 import React from "react";
-import BlobPic from '../assets/mask-group.png'
+
+import SparksSmall from '../assets/sparks-small.png'
+import Sparks from '../assets/sparks.png'
+
 
 export default function Hero() {
     return (
 <>
     <div className="hero">
-
+        
         <div className="hero--content">
 
-            <img className="hero-img" src={BlobPic} alt="michelle in Carlton Gardens" />
-
             <div className="hero--text">
-                <h1>Salut!</h1>
-                <p>Hi, I'm Michelle 👋 I'm a front end developer in Melbourne, Australia. 🇦🇺</p>
+                <h1>Hello! 👋
+                <br />
+                I'm Michelle
+                </h1>
+                <img className="sparks" src={SparksSmall} alt="sparkles"/>
+
+                <h2>I'm a front-end developer in Melbourne, Australia.</h2>
             </div>
             
         </div>
-            
-       
 
     </div>
 </>
