@@ -94,10 +94,14 @@ h4 {
   font-family: var(--DMserif);
 }
 
+.hero {
+  height: calc(100vh - 6vh);
+}
+
 .hero--content {
   margin: 2em;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -106,20 +110,15 @@ h4 {
   text-align: center;
 }
 
-.blob--container {
-  align-self: center;
-  position: absolute;
-  width: 100%;
-  opacity: 0.5;
-  z-index: -1;
-  overflow: hidden;
-}
-
 .hero-img {
   object-fit: contain;
   object-position: center;
   max-width: 50%;
   filter: grayscale(1);
+}
+
+.hero-img:hover {
+  filter: saturate(1)
 }
 
 button {
@@ -140,7 +139,7 @@ button:focus {
 
 section {
   margin: 1em;
-  border: 1px solid var(--light)
+  padding: 1em;
 }
 
 section h2 {
@@ -182,6 +181,7 @@ section h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  align-content: stretch;
   gap: 1em;
 }
 
@@ -198,6 +198,12 @@ section h2 {
   height: 100%;
   border-radius: 5px;
 }
+
+.project-img-container button {
+  margin: 1em;
+}
+
+/* Footer */
 
 footer {
   background-color: var(--accent);
