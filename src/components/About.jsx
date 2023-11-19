@@ -6,7 +6,7 @@ import Sparks from '../assets/sparks.png'
 
 export default function About() {
     return (
-        <div className="about-section">
+        <section className="about-section">
             
             <h2 className="section-header">About Me</h2>
 
@@ -42,7 +42,7 @@ export default function About() {
 
             </div>
 
-        </div>
+        </section>
         
     )
 }
