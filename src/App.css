@@ -40,13 +40,13 @@ h2 {
 
 a {
   color: var(--darker-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 a:hover,
 a:focus {
-  text-decoration-style: wavy;
-  color: var(--dark);
+  text-decoration: none;
 }
 
 body {
@@ -61,6 +61,11 @@ nav {
   max-height: 6vh;
   margin: 0;
   padding: 1em;
+  color: var(--darker-accent);
+  position: sticky;
+  top: 0;
+  background-color: var(--light);
+  z-index: 1;
 }
 
 nav div * {
@@ -207,8 +212,28 @@ button:focus {
 }
 
 .about-section-text {
+  padding: 1em;
+  margin: 1em;
+  line-height: 1.6;
+}
+
+.about-section-text ul {
   max-width: 75ch;
   text-align: justify;
+  padding: 1em;
+  margin: 1em;
+}
+
+.about-section-text a {
+  color: #fff;
+}
+
+.about-section-text a:hover {
+  text-decoration: none;
+}
+
+.project-wrapper {
+  text-align: center;
 }
 
 .about-img {
@@ -227,8 +252,9 @@ button:focus {
   filter: saturate(1)
 }
 
-.about-sparks-container {
-  margin: 0 auto;
+.about-sparks-container,
+.project-sparks-container {
+  margin: 1em auto;
   width: fit-content;
 }
 
@@ -259,7 +285,8 @@ button:focus {
 }
 
 .project-description p {
-  padding: 1em;
+  padding: 1em 2em;
+  margin: 1em;
 }
 
 .main-project-header {
@@ -268,6 +295,7 @@ button:focus {
 
 .project-img {
   width: 100%;
+  max-width: 400px;
   display: block;
   border-radius: 12px;
   /* filter: saturate(0); */
