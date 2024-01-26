@@ -9,18 +9,13 @@ import { Link } from "react-router-dom";
 export default function Hero() {
 
     const [spinning, setSpinning] = React.useState();
-
+    
     function toggleSpin() {
         setSpinning(prevSpinning => !prevSpinning);
     }
-
+    
     const allClasses = ['hero--svg-container', 'spinning'];
 
-    function getClasses() {
-        if (!spinning) {
-            allClasses.push('spinning-paused');
-        }
-    }
 
     return (
 <>
