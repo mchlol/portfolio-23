@@ -4,7 +4,7 @@
   --light: #F5F5F5;
   --accent: #E8D7FF;
   --darker-accent: #7F5DC7;
-  --dark: #092164;
+  --dark: #271d3e;
   --black: #000;
   --DMmono: 'DM Mono', monospace;
   --Saira: 'Saira', sans-serif;
@@ -222,6 +222,11 @@ button:focus {
   text-align: justify;
   padding: 1em;
   margin: 1em;
+  list-style-type: "\2726      ";
+}
+
+.about-section-text li {
+  margin: 0.25rem 0;
 }
 
 .about-section-text a {
@@ -363,7 +368,3 @@ footer {
 footer ul {
   padding: 1em;
 }
-
-/* .funky-stuff {
-  transform: translate(50%);
-} */
