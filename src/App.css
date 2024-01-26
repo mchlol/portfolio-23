@@ -423,7 +423,28 @@ footer ul {
   padding: 1em;
 }
 
-/* animation */
+/* silly stuff */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg, 
+    palevioletred, 
+    cornflowerblue, 
+    palevioletred) 
+    0 0 / 300% 100%;
+  /* */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 16s linear infinite;
+}
+
+
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
 
 .spinning {
   animation: spin 5s infinite linear;
