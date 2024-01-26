@@ -8,7 +8,7 @@ export default function Nav() {
             <div>
                 <NavLink
                 to="/"
-                className={ (obj) => obj.isActive ? "active-link align" : "align"}
+                className={ (obj) => obj.isActive ? "nav-link active-link align" : "nav-link align"}
                 >
                     <img src={SparkGrey} alt="a lil grey spark shape"
                     className="logo colour" 
@@ -19,13 +19,13 @@ export default function Nav() {
             <ul>
                 <NavLink
                 to="/about"
-                className={ (obj) => obj.isActive ? "active-link" : null}
+                className={ (obj) => obj.isActive ? "nav-link active-link" : 'nav-link'}
                 >
                     About
                 </NavLink>
                 <NavLink
                 to="/projects"
-                className={ obj => obj.isActive ? "active-link" : null}
+                className={ obj => obj.isActive ? "nav-link active-link" : 'nav-link'}
                 >
                     Projects
                 </NavLink>
