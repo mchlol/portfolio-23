@@ -54,6 +54,8 @@ body {
   margin: 0;
 }
 
+/* nav */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,17 @@ nav {
   top: 0;
   background-color: var(--light);
   z-index: 1;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.colour {
+  filter: sepia(100%) contrast(100%) brightness(75%) hue-rotate(195deg);
 }
 
 nav .active-link {
