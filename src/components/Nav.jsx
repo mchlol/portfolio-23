@@ -1,20 +1,30 @@
-import React from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
 
     return (
         <nav>
             <div>
-                <h2 className="logo">mb</h2>
+                <NavLink
+                to="/"
+                className={ (obj) => obj.isActive ? "active-link" : null}
+                >
+                    Home
+                </NavLink>
             </div>
             <ul>
-                <li className="social-icon"><a href="https://github.com/mchlol" target="_blank">
-                    <FaGithub />
-                </a></li>
-                <li className="social-icon"><a href="https://www.linkedin.com/in/michellebrown01/" target="_blank">
-                    <FaLinkedin />
-                </a></li>
+                <NavLink
+                to="/about"
+                className={ (obj) => obj.isActive ? "active-link" : null}
+                >
+                    About
+                </NavLink>
+                <NavLink
+                to="/projects"
+                className={ obj => obj.isActive ? "active-link" : null}
+                >
+                    Projects
+                </NavLink>
             </ul>
         </nav>
     )
