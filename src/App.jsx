@@ -1,23 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import About from './components/About'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
+import Hero from './pages/Hero'
+import Projects from './pages/Projects'
+import About from './pages/About'
 
-function App() {
+
+export default function App() {
 
 
   return (
-    <>
-      <Nav />
-      <Hero />
-      <Projects />
-      <About />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App
