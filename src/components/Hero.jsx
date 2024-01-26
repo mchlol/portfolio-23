@@ -37,16 +37,16 @@ export default function Hero() {
                     <span><DiReact /> React</span>
                     <span><SiTailwindcss /> TailwindCSS</span>
                     <span><SiDaisyui /> DaisyUI</span>
-                    {/* <span> <SiVite /> Vite</span> */}
+                    <span> <SiVite /> Vite</span>
                     <span><DiGit /> Git</span>
                     <span><DiGithubBadge /> GitHub</span>
                     <span><DiVisualstudio /> VS Code</span>
-                    {/* <span><FiTerminal /> iTerm</span> */}
+                    <span><FiTerminal /> iTerm</span>
                     <span><FaFigma /> Figma</span>
-                    {/* <span><SiNotion /> Notion</span>
+                    <span><SiNotion /> Notion</span>
                     <span><SiNetlify /> Netlify</span>
-                    <span><SiWordpress /> WordPress</span>
-                    <span><SiNextdotjs /> Next</span> */}
+                    {/* <span><SiWordpress /> WordPress</span> */}
+                    <span><SiNextdotjs /> Next</span>
                 </div>
                 
             </div>
