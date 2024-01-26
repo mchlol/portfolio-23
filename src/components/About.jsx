@@ -1,12 +1,16 @@
 import React from "react";
 import BlobPic from '../assets/mask-group.png'
+import LaserEyes from "../assets/lasereyes.png"
 import Sparks from '../assets/Sparks.png'
 
 export default function About() {
 
     function handleMouseEnter(e) {
-        console.log(`*record scratch* yep that's me`);
-        // e.target.classList.toggle('funky-stuff');
+        e.currentTarget.src = LaserEyes;
+    }
+
+    function handleMouseOut(e) {
+        e.currentTarget.src = BlobPic;
     }
     
     return (
@@ -23,6 +27,7 @@ export default function About() {
                     src={BlobPic} 
                     alt="Michelle in Carlton Gardens" 
                     onMouseEnter={ (e) => handleMouseEnter(e)}
+                    onMouseOut={ (e) => handleMouseOut(e)}
                     />
 
                     <div className="about-sparks-container">
