@@ -54,6 +54,14 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style-type: "\2726   ";
+}
+
+li {
+  margin: 0.125rem 0;
+}
+
 /* nav */
 
 nav {
@@ -129,23 +137,26 @@ section {
   min-height: 100vh;
 }
 
+button {
+  transition: background-color ease-in-out 150ms;
+}
+
 /* hero */
 
 .hero {
   min-height: calc(100vh - 6vh);
   display: flex;
   justify-content: center;
-  background-color: var(--darker-accent);
+  background-color: var(--light);
 }
 
 .hero--content {
   margin: 2em;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
-  color: var(--light);
+  color: var(--dark);
 }
 
 .hero--text {
@@ -157,23 +168,42 @@ section {
 
 .hero--text p {
   font-size: 1.2rem;
+  margin: 2rem 0 0 0;
+}
+
+.hero--svg-container svg path {
+  fill: var(--darker-accent);
+}
+
+.hero--links a{
+  color: var(--accent);
+}
+
+.hero--links {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero--links button {
+  border: 1px solid var(--accent);
+  background-color: var(--darker-accent);
 }
 
 .text-outline {
-  -webkit-text-stroke: 1px var(--accent);
-  -webkit-text-fill-color: #7F5DC7;
+  -webkit-text-stroke: 1px var(--dark);
+  -webkit-text-fill-color: var(--light);
   color: var(--accent);
 }
 
 .tools-container {
-  background-color: var(--light);
+  background-color: inherit;
   color: var(--dark);
-  padding: 1rem 1rem 3rem 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 1.5rem;
   border-radius: 8px;
   text-align: center;
   max-width: 75ch;
-  box-shadow: 5px 5px 8px var(--dark);
+  box-shadow: 5px 5px 8px var(--darker-accent);
 }
 
 .tools-container-icons {
@@ -251,11 +281,6 @@ button:focus {
   text-align: justify;
   padding: 1em;
   margin: 1em;
-  list-style-type: "\2726      ";
-}
-
-.about-section-text li {
-  margin: 0.25rem 0;
 }
 
 .about-section-text a {
@@ -396,4 +421,26 @@ footer {
 
 footer ul {
   padding: 1em;
+}
+
+/* animation */
+
+.spinning {
+  animation: spin 5s infinite linear;
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+.spinning-paused {
+  animation-play-state: paused;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
