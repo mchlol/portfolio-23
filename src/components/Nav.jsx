@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import SparkGrey from "../assets/spark-grey.svg"
+import SparkGrey from "../assets/spark.svg"
 
 export default function Nav() {
 
@@ -11,7 +11,7 @@ export default function Nav() {
                 className={ (obj) => obj.isActive ? "active-link align" : "align"}
                 >
                     <img src={SparkGrey} alt="a lil grey spark shape"
-                    className="colour" 
+                    className="logo colour" 
                     height={15}/>
                     Home
                 </NavLink>
