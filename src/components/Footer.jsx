@@ -5,7 +5,6 @@ export default function Footer() {
 
     return (
         <footer>
-            <p>Looking for more info?</p>
             <ul>
                 <li className="social-icon"><a href="https://github.com/mchlol" target="_blank">
                     <FaGithub />
