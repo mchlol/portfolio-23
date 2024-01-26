@@ -17,10 +17,10 @@ export default function Hero() {
         <div className="hero--content">
 
             <div className="hero--text">
-                <h1>Hello! 👋
-                <br />
-                I'm <span className="text-outline">Michelle</span>
-                </h1>
+                <h1>Hello! Salut!</h1>
+
+                <h2>I'm <span className="text-outline">Michelle</span>
+                </h2>
                 <img className="sparks" src={SparksSmall} alt="sparkles"/>
 
                 <h2>I'm a front-end developer in Melbourne, Australia.</h2>
@@ -37,17 +37,20 @@ export default function Hero() {
                     <span><DiReact /> React</span>
                     <span><SiTailwindcss /> TailwindCSS</span>
                     <span><SiDaisyui /> DaisyUI</span>
-                    <span> <SiVite /> Vite</span>
                     <span><DiGit /> Git</span>
                     <span><DiGithubBadge /> GitHub</span>
                     <span><DiVisualstudio /> VS Code</span>
+                </div>
+                {/* <br />
+                <div className="tools-container-icons tools-secondary">
+                    <span> <SiVite /> Vite</span>
                     <span><FiTerminal /> iTerm</span>
                     <span><FaFigma /> Figma</span>
                     <span><SiNotion /> Notion</span>
                     <span><SiNetlify /> Netlify</span>
-                    {/* <span><SiWordpress /> WordPress</span> */}
+                    <span><SiWordpress /> WordPress</span>
                     <span><SiNextdotjs /> Next</span>
-                </div>
+                </div> */}
                 
             </div>
             
