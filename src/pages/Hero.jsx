@@ -27,7 +27,7 @@ export default function Hero() {
                 <h1>Hello! <span className="gradient-text">Salut!</span></h1>
                 <h2>I'm <span className="text-outline">Michelle</span></h2>
 
-                <div className={`${spinning ? "hero--svg-container spinning" : "hero--svg-container spinning spinning-paused"}`}
+                <div className={`${spinning ? "svg-container spinning" : "svg-container spinning spinning-paused"}`}
                 onClick={toggleSpin}>
                 <svg width="65" height="75" viewBox="0 0 65 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M64.5559 35.2985L56.6101 37.303C49.3503 39.1361 43.6758 46.0529 42.1705 54.9095L40.5279 64.5969L38.8854 54.9095C37.3801 46.0529 31.7056 39.1361 24.442 37.303L16.5 35.2985L24.442 33.2939C31.7056 31.4609 37.3801 24.5402 38.8854 15.6874L40.5279 6L42.1705 15.6874C43.6758 24.5402 49.3503 31.4609 56.6101 33.2939L64.5559 35.2985Z" fill="#D9D9D9"/>
