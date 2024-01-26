@@ -12,7 +12,7 @@ export default function Nav() {
                 >
                     <img src={SparkGrey} alt="a lil grey spark shape"
                     className="colour" 
-                    height={20}/>
+                    height={15}/>
                     Home
                 </NavLink>
             </div>
