@@ -40,13 +40,13 @@ h2 {
 
 a {
   color: var(--darker-accent);
-  text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 body {
@@ -66,6 +66,12 @@ nav {
   top: 0;
   background-color: var(--light);
   z-index: 1;
+}
+
+nav .active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 nav div * {
