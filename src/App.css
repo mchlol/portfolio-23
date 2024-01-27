@@ -130,8 +130,12 @@ nav {
   gap: 0.25rem;
 }
 
-.colour {
-  filter: sepia(100%) contrast(100%) brightness(75%) hue-rotate(195deg);
+.logo-svg-container svg {
+  width: 15px;
+}
+
+.logo-svg-container path {
+  fill: var(--accentColourStrong);
 }
 
 nav .active-link {
