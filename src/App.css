@@ -26,6 +26,10 @@
   --shadowColour: var(--backgroundColour)
 }
 
+.toggle {
+  cursor: pointer;
+}
+
 body {
   font-family: var(--fontText);
   margin: 0;
