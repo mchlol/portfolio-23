@@ -1,23 +1,29 @@
 import React from "react"
+import { LuMoonStar, LuSun } from "react-icons/lu";
+
 
 export default function DarkModeToggle() {
-    const [isDark, setIsDark] = React.useState(true);
 
+    const [isDarkMode, setIsDarkMode] = React.useState(false);
 
     React.useEffect( () => {
-        if (isDark) {
+        if (isDarkMode) {
             document.body.classList.add('dark-mode');
             document.body.classList.remove('light-mode');
         } else {
             document.body.classList.remove('dark-mode')
             document.body.classList.add('light-mode')
         }
-    },[isDark]);
+    },[isDarkMode]);
 
     return (
-        <input 
-        type="checkbox" 
-        onChange={ e => setIsDark(e.target.checked)}
-        />
+        <span className="toggle"
+        onClick={() => setIsDarkMode(prevIsDarkMode => !prevIsDarkMode)}>
+            {
+                isDarkMode
+                ? <LuMoonStar />
+                : <LuSun />
+            }
+        </span>
     );
 };
