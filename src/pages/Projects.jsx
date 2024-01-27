@@ -14,7 +14,7 @@ export default function Projects() {
 
             <div className="project-wrapper">
 
-                <div className="project-img-container">
+                <div className="project-img-container gradient-border">
 
                     <h3 className="main-project-header">Game List</h3>
 
@@ -43,7 +43,7 @@ export default function Projects() {
 
                 <div className="projects-group">
                     
-                    <div className="resize-project project-img-container">
+                    <div className="resize-project project-img-container gradient-border">
                         <h3>Colors</h3>
                         <img className="project-img" src={colorsGif} alt="" />
                         <p>A NextJS project based on Pantone Colo(u)r of the Year</p>
@@ -51,7 +51,7 @@ export default function Projects() {
                         </a>
                         <a href="https://github.com/mchlol/colors" target="_blank"><button><MdCode />Code</button></a>
                     </div>
-                    <div className="resize-project project-img-container">
+                    <div className="resize-project project-img-container gradient-border">
                         <h3>Quizzical</h3>
                         <img className="project-img" src={quizzicalGif} alt="" />
                         <p>A quiz app using the <a href="https://opentdb.com/" target="_blank" rel="noopener noreferrer">Open Trivia DataBase API</a></p>
@@ -59,14 +59,14 @@ export default function Projects() {
                         </a>
                         <a href="https://github.com/mchlol/quizzical" target="_blank"><button><MdCode />Code</button></a>
                     </div>
-                    <div className="resize-project project-img-container">
+                    <div className="resize-project project-img-container gradient-border">
                     <h3>Tenzies</h3>
                         <img className="project-img" src={tenziesGif} alt="" />
                         <p>A cute dice game</p>
                         <a href="https://mchlol.github.io/tenzies/" target="_blank"><button><MdVisibility /> Live</button></a>
                         <a href="https://github.com/mchlol/tenzies" target="_blank"><button><MdCode />Code</button></a>
                     </div>
-                    <div className="resize-project project-img-container">
+                    <div className="resize-project project-img-container gradient-border">
                         <h3>Password Generator</h3>
                         <img className="project-img" src={passwordGif} alt="" />
                         <p>Does what it says on the tin, plus night mode!</p>
