@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import SparkGrey from "../assets/spark.svg"
+import Toggle from "./Toggle"
 
 export default function Nav() {
 
@@ -30,6 +31,9 @@ export default function Nav() {
                     Projects
                 </NavLink>
             </ul>
+            <div>
+                <Toggle />
+            </div>
         </nav>
     )
 }
