@@ -115,7 +115,7 @@ nav {
   align-items: center;
   max-height: 6vh;
   margin: 0;
-  padding: 1em;
+  padding: 1em 2em;
   position: sticky;
   top: 0;
   background-color: var(--backgroundColour);
@@ -132,6 +132,8 @@ nav {
 
 .logo-svg-container svg {
   width: 15px;
+  position: relative;
+  top: 3px;
 }
 
 .logo-svg-container path {
