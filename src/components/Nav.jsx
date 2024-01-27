@@ -17,7 +17,7 @@ export default function Nav() {
                     Home
                 </NavLink>
             </div>
-            <ul>
+            <div className="links">
                 <NavLink
                 to="/about"
                 className={ (obj) => obj.isActive ? "nav-link active-link" : 'nav-link'}
@@ -30,7 +30,7 @@ export default function Nav() {
                 >
                     Projects
                 </NavLink>
-            </ul>
+            </div>
             <div>
                 <Toggle />
             </div>
