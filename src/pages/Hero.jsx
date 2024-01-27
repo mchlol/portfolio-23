@@ -16,6 +16,8 @@ export default function Hero() {
     
     const allClasses = ['hero--svg-container', 'spinning'];
 
+    // put the content text and tools container side by side on desktop, use flex so on mobile the tools go underneath
+
 
     return (
 <>

@@ -3,6 +3,9 @@ import Toggle from "./Toggle"
 
 export default function Nav() {
 
+    // position the nav so the toggle isn't squished into the corner
+    // probable just need to wrap in a container and add margin
+
     return (
         <nav>
             <div>
