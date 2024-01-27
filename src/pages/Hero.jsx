@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
 
-    const [spinning, setSpinning] = React.useState();
+    const [spinning, setSpinning] = React.useState(true);
     
     function toggleSpin() {
         setSpinning(prevSpinning => !prevSpinning);
@@ -48,7 +48,7 @@ export default function Hero() {
                 <Link to="/projects"><button>See some things I've made</button></Link>
             </div>
 
-            <div className="tools-container">
+            <div className="tools-container gradient-border">
                 <h3>Tools & Technologies</h3>
 
                 <div className="tools-container-icons">
