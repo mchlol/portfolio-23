@@ -4,6 +4,7 @@ import { SiDaisyui, SiTailwindcss, SiWordpress, SiNotion, SiNetlify, SiVite, SiN
 import { FaFigma } from "react-icons/fa6";
 import { FiTerminal } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import ScrollToTop from '../components/ScrollToTop';
 
 
 export default function Hero() {
@@ -22,6 +23,7 @@ export default function Hero() {
     return (
 <>
     <div className="hero">
+        <ScrollToTop />
         
         <div className="hero--content">
 

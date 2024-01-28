@@ -4,12 +4,14 @@ import tenziesGif from '../assets/project-tenzies.gif';
 import passwordGif from '../assets/project-password-generator.gif';
 import quizzicalGif from '../assets/project-quizzical.gif'
 import colorsGif from '../assets/project-colors.gif'
-import { MdCode, MdVisibility } from "react-icons/md"
+import { MdCode, MdVisibility } from "react-icons/md";
+import ScrollToTop from '../components/ScrollToTop';
 
 
 export default function Projects() {
     return (
         <main className="projects-section">
+            <ScrollToTop />
             <h2 className="section-header">Projects</h2>
 
             <div className="project-wrapper">
