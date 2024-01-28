@@ -1,7 +1,7 @@
 import React from "react";
 import BlobPic from '../assets/mask-group.png'
 import LaserEyes from "../assets/lasereyes.png"
-import Sparks from '../assets/Sparks.png'
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function About() {
 
@@ -15,6 +15,7 @@ export default function About() {
     
     return (
         <main className="about-section">
+        <ScrollToTop />
             
             <h2 className="section-header">About</h2>
 
