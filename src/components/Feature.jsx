@@ -1,7 +1,6 @@
 import React from 'react';
 import ShadowBox from './ShadowBox';
 import Sparks from "./Sparks"
-import Computer from '../assets/noun-computer.svg';
 import TypingText from './TypingText';
 
 export default function Feature() {
