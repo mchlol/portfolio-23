@@ -14,10 +14,6 @@ export default function Feature() {
                 <h1 style={{textAlign: "right", margin: "0"}}>Hello! <span className="gradient-text">Salut!</span></h1>
             </ShadowBox>
 
-            {/* <ShadowBox classNames="feature--bLeft">
-                <img src={Computer} alt="line drawing of a 90s era computer"/>
-            </ShadowBox> */}
-
             <ShadowBox classNames="feature--bRight">
                 <div className="terminal">
                     <TypingText />
