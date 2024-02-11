@@ -8,6 +8,7 @@
   --black: #000;
   --fontHeading: 'DM Mono', monospace;
   --fontText: 'Saira', sans-serif;
+  --linkColour: palevioletred;
   --gradient: linear-gradient(
     90deg, 
     palevioletred, 
@@ -52,7 +53,7 @@ body {
 }
 
 a {
-  color: var(--accentColourStrong);
+  color: var(--linkColour);
   text-decoration: transparent;
 }
 
@@ -110,6 +111,8 @@ button {
 
 .toggle {
   cursor: pointer;
+  display: flex;
+  place-content: center;
 }
 
 
@@ -586,6 +589,10 @@ footer {
     .feature--top {
       align-self: flex-start;
     }
+  }
+
+  nav .links {
+    gap: 0.5rem;
   }
 
 }
