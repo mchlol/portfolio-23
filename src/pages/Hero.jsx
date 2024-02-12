@@ -13,30 +13,26 @@ import Feature from "../components/Feature";
 export default function Hero() {
 
     return (
-<>
+    <>
     <div className="hero">
         <ScrollToTop />
 
         <div className="hero--content">
 
-        <Feature />
-
-            <div className="hero--text">
-
-                <h2>I'm <span className="text-outline">Michelle</span></h2>
-
-                <p style={ {fontSize: "1.5rem"}}>I'm a front-end developer in Melbourne, Australia.</p>
-
-                <p>I love design, coding, and learning to design and code cool stuff.</p>
-
-                <p>
-                <Link to="/about">Learn more about me</Link> or <Link to="/projects">see some things I've made</Link>.
-                </p>
-
+            <div className="hero--top">
+                <Feature />
+                <div className="hero--text">
+                    <h2>I'm <span className="text-outline">Michelle</span></h2>
+                    <p style={ {fontSize: "1.5rem"}}>I'm a front-end developer in Melbourne, Australia.</p>
+                    <p>I love design, coding, and learning to design and code cool stuff.</p>
+                    <p>
+                    <Link to="/about">Learn more about me</Link> or <Link to="/projects">see some things I've made</Link>.
+                    </p>
+                </div>
             </div>
 
             <div className="tools-container gradient-border">
-                <h3>Tools & Technologies</h3>
+                <h3>I use:</h3>
 
                 <div className="tools-container-icons">
                     <span><DiHtml5 /> HTML5</span>
@@ -62,7 +58,7 @@ export default function Hero() {
                     <span><MdOutlineSecurity /> Web Security</span>
                     <span><LuAccessibility /> Accessibility</span>
                 </div>
-                
+            
             </div>
             
         </div>

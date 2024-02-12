@@ -1,10 +1,15 @@
 import React from "react"
 import { LuMoonStar, LuSun } from "react-icons/lu";
-
+import { motion } from "framer-motion";
 
 export default function DarkModeToggle() {
 
+    const [isRotated, setIsRotated] = React.useState(false);
     const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+    function handleClick() {
+        setIsRotated(!isRotated);
+    };
 
     React.useEffect( () => {
         if (isDarkMode) {
@@ -17,13 +22,21 @@ export default function DarkModeToggle() {
     },[isDarkMode]);
 
     return (
-        <span className="toggle"
-        onClick={() => setIsDarkMode(prevIsDarkMode => !prevIsDarkMode)}>
-            {
-                isDarkMode
-                ? <LuMoonStar />
-                : <LuSun />
-            }
-        </span>
+        <motion.div
+            onClick={handleClick}
+            animate={{ rotate: isRotated ? 360 : 0 }}
+            transition={ {duration: 0.5 }}
+            >
+                <span className="toggle"
+                onClick={() => setIsDarkMode(prevIsDarkMode => !prevIsDarkMode)}>
+
+                    {
+                        isDarkMode
+                        ? <LuMoonStar key="dark"/>
+                        : <LuSun key="light"/>
+                    }
+
+                </span>
+            </motion.div>
     );
 };
