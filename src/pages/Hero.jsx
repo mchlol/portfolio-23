@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             <div className="tools-container gradient-border">
-                <h3>Tools & Technologies</h3>
+                <h3>I use:</h3>
 
                 <div className="tools-container-icons">
                     <span><DiHtml5 /> HTML5</span>
