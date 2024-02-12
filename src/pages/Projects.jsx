@@ -8,6 +8,7 @@ import { MdCode, MdVisibility } from "react-icons/md";
 import ScrollToTop from '../components/ScrollToTop';
 import { HiSparkles } from "react-icons/hi2";
 import ProjectCard from "../components/ProjectCard";
+import Sparks from "../components/Sparks"
 
 
 export default function Projects() {
@@ -37,8 +38,8 @@ export default function Projects() {
 
                 </div>
 
-                <div className="svg-container">
-                    <HiSparkles />
+                <div className="projects-svg-container">
+                    <Sparks />
                 </div>
 
                 <div className="projects-group">

@@ -443,7 +443,7 @@ button:focus {
   align-self: flex-start;
 }
 
-.about-svg-container {
+.about-svg-container, .projects-svg-container {
   display: flex;
   justify-content: center;
   align-items: center;
