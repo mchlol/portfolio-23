@@ -33,7 +33,7 @@ export default function About() {
                     />
 
                 <div className="svg-container">
-                    <HiSparkles style={{fontSize: "4rem"}}/>
+                    <HiSparkles />
                 </div>
 
                 </div>
