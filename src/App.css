@@ -361,6 +361,9 @@ footer ul {
   gap: 0.25rem;
 }
 
+.sparks {
+  width: 50px;
+}
 .svg-container {
   font-size: 4rem;
 }
