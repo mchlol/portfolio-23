@@ -7,6 +7,7 @@ import colorsGif from '../assets/project-colors.gif'
 import { MdCode, MdVisibility } from "react-icons/md";
 import ScrollToTop from '../components/ScrollToTop';
 import { HiSparkles } from "react-icons/hi2";
+import ProjectCard from "../components/ProjectCard";
 
 
 export default function Projects() {
@@ -42,36 +43,13 @@ export default function Projects() {
 
                 <div className="projects-group">
                     
-                    <div className="resize-project project-img-container gradient-border">
-                        <h3>Colors</h3>
-                        <img className="project-img" src={colorsGif} alt="" />
-                        <p>A NextJS project based on Pantone Colo(u)r of the Year</p>
-                        <a href="https://mchlol-next-colors.netlify.app/" target="_blank"><button><MdVisibility /> Live</button>
-                        </a>
-                        <a href="https://github.com/mchlol/colors" target="_blank"><button><MdCode />Code</button></a>
-                    </div>
-                    <div className="resize-project project-img-container gradient-border">
-                        <h3>Quizzical</h3>
-                        <img className="project-img" src={quizzicalGif} alt="" />
-                        <p>A quiz app using the <a href="https://opentdb.com/" target="_blank" rel="noopener noreferrer">Open Trivia DataBase API</a></p>
-                        <a href="https://mchlol-quiz.netlify.app/" target="_blank"><button><MdVisibility /> Live</button>
-                        </a>
-                        <a href="https://github.com/mchlol/quizzical" target="_blank"><button><MdCode />Code</button></a>
-                    </div>
-                    <div className="resize-project project-img-container gradient-border">
-                    <h3>Tenzies</h3>
-                        <img className="project-img" src={tenziesGif} alt="" />
-                        <p>A cute dice game</p>
-                        <a href="https://mchlol.github.io/tenzies/" target="_blank"><button><MdVisibility /> Live</button></a>
-                        <a href="https://github.com/mchlol/tenzies" target="_blank"><button><MdCode />Code</button></a>
-                    </div>
-                    <div className="resize-project project-img-container gradient-border">
-                        <h3>Password Generator</h3>
-                        <img className="project-img" src={passwordGif} alt="" />
-                        <p>Does what it says on the tin, plus night mode!</p>
-                        <a href="https://mchlol.github.io/password-generator/" target="_blank"><button><MdVisibility /> Live</button></a>
-                        <a href="https://github.com/mchlol/password-generator" target="_blank"><button><MdCode />Code</button></a>
-                    </div>
+                    <ProjectCard title="Colours" img={colorsGif} description="A NextJS project based on Pantone Colo(u)r of the Year" liveUrl="https://mchlol-next-colors.netlify.app/" codeUrl="https://github.com/mchlol/colors" />
+
+                    <ProjectCard title="Quizzical" img={quizzicalGif} description="A React quiz app using data from the OpenTriviaDB API" liveUrl="https://mchlol-quiz.netlify.app/" codeUrl="https://github.com/mchlol/quizzical" />
+
+                    <ProjectCard title="Tenzies" img={tenziesGif} description="A React dice game with time tracking and score saving" liveUrl="https://mchlol.github.io/tenzies/" codeUrl="https://github.com/mchlol/tenzies" />
+
+                    <ProjectCard title="Password Generator" img={passwordGif} description="Set parameters to make secure passwords and copy to clipboard" liveUrl="https://mchlol.github.io/password-generator/" codeUrl="https://github.com/mchlol/password-generator" />
                     
                 </div>
                     
