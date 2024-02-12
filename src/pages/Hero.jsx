@@ -13,13 +13,13 @@ import Feature from "../components/Feature";
 export default function Hero() {
 
     return (
-<>
+    <>
     <div className="hero">
         <ScrollToTop />
 
         <div className="hero--content">
 
-        <Feature />
+            <Feature />
 
             <div className="hero--text">
 
@@ -62,7 +62,7 @@ export default function Hero() {
                     <span><MdOutlineSecurity /> Web Security</span>
                     <span><LuAccessibility /> Accessibility</span>
                 </div>
-                
+            
             </div>
             
         </div>
