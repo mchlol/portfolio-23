@@ -214,11 +214,19 @@ footer ul {
   align-items: center;
 }
 
+.hero--top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .feature {
   display: grid;
   aspect-ratio: 10 / 7;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(7, 1fr);
+  margin-top: 2rem;
 }
 
 .feature--top {
