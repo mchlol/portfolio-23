@@ -140,12 +140,6 @@ nav {
   gap: 0.5rem;
 }
 
-.logo-svg-container svg {
-  width: 15px;
-  position: relative;
-  top: 3px;
-}
-
 .logo-svg-container path {
   fill: var(--accentColourStrong);
 }
@@ -187,6 +181,17 @@ footer ul {
 .svg-container svg path {
   fill: var(--accentColourStrong);
 }
+
+.sparks {
+  width: 50px;
+  padding: 0.5rem;
+  color: var(--accentColourStrong);
+}
+
+.svg-container {
+  font-size: 4rem;
+}
+
 
 /* hero */
 
@@ -283,11 +288,6 @@ footer ul {
   height: 38px;
 }
 
-.sparks {
-  padding: 0.5rem;
-  color: var(--accentColourStrong);
-}
-
 .hero--text {
   max-width: 80%;
   padding: 1em;
@@ -369,13 +369,6 @@ footer ul {
   gap: 0.25rem;
 }
 
-.sparks {
-  width: 50px;
-}
-.svg-container {
-  font-size: 4rem;
-}
-
 button {
   background-color: var(--accentColourStrong);
   border: 1px solid var(--accentColourStrong);
@@ -408,7 +401,6 @@ button:focus {
 
 .about-section-text {
   padding: 1em;
-  margin: 1em;
   line-height: 1.6;
   text-align: center;
 }
@@ -448,6 +440,13 @@ button:focus {
 
 .about-img-container {
   text-align: center;
+  align-self: flex-start;
+}
+
+.about-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-img:hover {

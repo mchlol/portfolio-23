@@ -3,6 +3,7 @@ import BlobPic from '../assets/mask-group.png'
 import LaserEyes from "../assets/lasereyes.png"
 import ScrollToTop from '../components/ScrollToTop';
 import { HiSparkles } from "react-icons/hi2";
+import Sparks from '../components/Sparks'
 
 export default function About() {
 
@@ -32,8 +33,8 @@ export default function About() {
                     onMouseOut={ (e) => handleMouseOut(e)}
                     />
 
-                <div className="svg-container">
-                    <HiSparkles />
+                <div className="about-svg-container">
+                    <Sparks />
                 </div>
 
                 </div>
