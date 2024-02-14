@@ -29,8 +29,9 @@ export default function Projects() {
                 <ProjectCardFeatured 
                     title="GameList"
                     img={gamelist3}
-                    description={<p>A web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites.<br />
-                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify. This was my final project for JavaScript Development at General Assembly.</p>}
+                    description={<p>This was my final project for JavaScript Development at General Assembly. I created a web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites. I created this because while I was in the program a game I really wanted to play came out but I didn't have time to play it!<br />
+                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify. <br />
+                    This project is continuously under construction while I work through a backlog of features I want to add.</p>}
                     codeUrl="https://github.com/mchlol/next-game-list"
                     liveUrl="https://mchlol-gamelist.netlify.app/"
                     img2={gamelist1}
@@ -41,7 +42,8 @@ export default function Projects() {
                 <ProjectCardFeatured 
                     title="MJ Printing"
                     img={mj1}
-                    description={<p>A brochure website for a small local business using WordPress. I created all content including copy, blog posts, photography, and SEO, and built, staged, deployed and managed using FTP and Cpanel. I didn't know anything about modern web development when I took over this project and had to learn how to do pretty much everything on the fly.</p>}
+                    description={<p>A brochure website for a small local business using WordPress. I created all content from scratch, including writing all the copy including blog posts, taking professional-looking photos, creating graphics (even a video!) and learning SEO best practices.<br />
+                    I didn't know anything about modern web development when I took over this project and had to learn how to do pretty much everything on my own, including troubleshooting and learning how to navigate cPanel, create a staging environment and how to deploy.</p>}
                     liveUrl="https://www.mjprinting.com.au"
                     img2={mj2}
                     img3={mj3}
