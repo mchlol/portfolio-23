@@ -1,14 +1,21 @@
 import React from "react";
-import gamelistGif from '../assets/project-gamelist.gif';
+import gamelist1 from "../assets/p_gamelist_1.png";
+import gamelist2 from "../assets/p_gamelist_2.png";
+import gamelist3 from "../assets/p_gamelist_3.png";
+import gamelist4 from "../assets/p_gamelist_4.png";
+import mj1 from "../assets/p_mj_1.png";
+import mj2 from "../assets/p_mj_2.png";
+import mj3 from "../assets/p_mj_3.png";
+import mj4 from "../assets/p_mj_4.png";
+
 import tenziesGif from '../assets/project-tenzies.gif';
 import passwordGif from '../assets/project-password-generator.gif';
 import quizzicalGif from '../assets/project-quizzical.gif'
 import colorsGif from '../assets/project-colors.gif'
-import { MdCode, MdVisibility } from "react-icons/md";
 import ScrollToTop from '../components/ScrollToTop';
-import { HiSparkles } from "react-icons/hi2";
+
 import ProjectCard from "../components/ProjectCard";
-import Sparks from "../components/Sparks"
+import ProjectCardFeatured from "../components/ProjectCardFeatured";
 
 
 export default function Projects() {
@@ -18,29 +25,27 @@ export default function Projects() {
             <h2 className="section-header">Projects</h2>
 
             <div className="project-wrapper">
+                <ProjectCardFeatured 
+                    title="GameList"
+                    img={gamelist3}
+                    description={<p>A web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites.<br />
+                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify.</p>}
+                    codeUrl="https://github.com/mchlol/next-game-list"
+                    liveUrl="https://mchlol-gamelist.netlify.app/"
+                    img2={gamelist1}
+                    img3={gamelist2}
+                    img4={gamelist4}
+                />
 
-                <div className="project-img-container gradient-border">
-
-                    <h3 className="main-project-header">Game List</h3>
-
-                    <img className="project-img" src={gamelistGif} alt="screenshot of a list of video games" />
-
-                    <p>A web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites.<br />
-                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify.</p>
-
-                    <a href="https://mchlol-gamelist.netlify.app/" target="_blank">
-                        <button><MdVisibility /> Live</button>
-                    </a>
-                    
-                    <a href="https://github.com/mchlol/next-game-list" target="_blank">
-                        <button><MdCode />Code</button>
-                    </a>
-
-                </div>
-
-                <div className="projects-svg-container">
-                    <Sparks />
-                </div>
+                <ProjectCardFeatured 
+                    title="MJ Printing"
+                    img={mj1}
+                    description={<p>A WordPress website for a small local business.</p>}
+                    liveUrl="https://www.mjprinting.com.au"
+                    img2={mj2}
+                    img3={mj3}
+                    img4={mj4}
+                />
 
                 <div className="projects-group">
                     
