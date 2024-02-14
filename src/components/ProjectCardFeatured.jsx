@@ -9,13 +9,18 @@ export default function ProjectCardFeatured(props) {
 
     return (
         <div className="project-featured">
-        
-            <h3>{title}</h3>
 
             <div className="project-featured--content">
             
                 <div className="project-featured--left">
-                    <img className="project-featured--img" src={img} alt="project screenshot" />
+
+                    <img className="project-featured--img project-img gradient-border" src={img} alt="project screenshot" />
+                
+                </div>
+
+                <div className="project-featured--right">
+                    <h3>{title}</h3>
+                    {description}
                     <div className="project-btns">
                         <a href={liveUrl} target="_blank"><button><MdVisibility />
                             Live
@@ -29,17 +34,14 @@ export default function ProjectCardFeatured(props) {
                         }
                         
                     </div>
-                
                 </div>
-                <div className="project-featured--right">
-                    {description}
-                </div>
+
             </div>
 
             <div className="project-featured--pics">
-                <img className="project-img" src={img2} alt="project screenshot" />
-                <img className="project-img" src={img3} alt="project screenshot" />
-                <img className="project-img" src={img4} alt="project screenshot" />
+                <img className="project-img gradient-border" src={img2} alt="project screenshot" />
+                <img className="project-img gradient-border" src={img3} alt="project screenshot" />
+                <img className="project-img gradient-border" src={img4} alt="project screenshot" />
             </div>
 
             <div className="project-featured--divider">

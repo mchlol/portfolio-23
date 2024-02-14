@@ -25,11 +25,12 @@ export default function Projects() {
             <h2 className="section-header">Projects</h2>
 
             <div className="project-wrapper">
+                
                 <ProjectCardFeatured 
                     title="GameList"
                     img={gamelist3}
                     description={<p>A web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites.<br />
-                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify.</p>}
+                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify. This was my final project for JavaScript Development at General Assembly.</p>}
                     codeUrl="https://github.com/mchlol/next-game-list"
                     liveUrl="https://mchlol-gamelist.netlify.app/"
                     img2={gamelist1}
@@ -40,12 +41,14 @@ export default function Projects() {
                 <ProjectCardFeatured 
                     title="MJ Printing"
                     img={mj1}
-                    description={<p>A WordPress website for a small local business.</p>}
+                    description={<p>A brochure website for a small local business using WordPress. I created all content including copy, blog posts, photography, and SEO, and built, staged, deployed and managed using FTP and Cpanel. I didn't know anything about modern web development when I took over this project and had to learn how to do pretty much everything on the fly.</p>}
                     liveUrl="https://www.mjprinting.com.au"
                     img2={mj2}
                     img3={mj3}
                     img4={mj4}
                 />
+
+                <h3>Other projects</h3>
 
                 <div className="projects-group">
                     

@@ -488,12 +488,7 @@ button:focus {
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  /* filter: saturate(0); */
 }
-
-/* .project-img:hover {
-  filter: saturate(1);
-} */
 
 .project-img-container {
   max-width: 50ch;
@@ -550,7 +545,9 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid black;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .project-featured--img {
@@ -563,6 +560,7 @@ button:focus {
   justify-content: center;
   align-items: stretch;
   gap: 1rem;
+
 }
 
 .project-featured--left {
@@ -570,14 +568,15 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid red;
 }
 
 .project-featured--right {
   max-width: 500px;
   text-align: justify;
-  margin: 1rem;
-  border: solid red;
+  margin: 0 1rem;
+  p, h3 {
+    margin: 0;
+  }
 }
 
 .project-featured--pics {
