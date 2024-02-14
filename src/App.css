@@ -558,7 +558,7 @@ button:focus {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 1rem;
 
 }
