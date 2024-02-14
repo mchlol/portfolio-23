@@ -488,12 +488,7 @@ button:focus {
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  /* filter: saturate(0); */
 }
-
-/* .project-img:hover {
-  filter: saturate(1);
-} */
 
 .project-img-container {
   max-width: 50ch;
@@ -536,7 +531,7 @@ button:focus {
   border-radius: 5px;
 }
 
-.project-img-container button {
+.project-btns button, .resize-project button {
   font-size: 0.8rem;
   margin: 1em;
   display: inline-flex;
@@ -544,6 +539,64 @@ button:focus {
   justify-content: center;
   gap: 0.25rem;
 }
+
+.project-featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.project-featured--img {
+  max-width: 500px;
+}
+
+.project-featured--content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+.project-featured--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-featured--right {
+  max-width: 500px;
+  text-align: justify;
+  margin: 0 1rem;
+  p, h3 {
+    margin: 0;
+  }
+}
+
+.project-featured--pics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  margin: 1rem 0;
+}
+
+.project-featured--divider {
+  margin: 1rem 0;
+}
+
+.projects-svg-container {
+  font-size: 2rem;
+  color: var(--accentColourStrong);
+}
+
 
 /* Footer */
 
