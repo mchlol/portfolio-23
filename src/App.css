@@ -401,7 +401,7 @@ button:focus {
 
 .about-section-content {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
@@ -416,8 +416,6 @@ button:focus {
 .about-section-text ul {
   max-width: 75ch;
   text-align: justify;
-  display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -443,13 +441,12 @@ button:focus {
   object-position: center;
   max-width: 80%;
   filter: grayscale(1);
-  flex: 0 1 auto;
 }
 
-.about-img-container {
+/* .about-img-container {
   text-align: center;
   align-self: flex-start;
-}
+} */
 
 .about-svg-container, .projects-svg-container {
   display: flex;
