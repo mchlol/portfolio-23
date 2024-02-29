@@ -483,6 +483,7 @@ button:focus {
 
 .project-img {
   width: 100%;
+  height: auto;
   max-width: 400px;
   border-radius: 12px;
 }
@@ -524,7 +525,8 @@ button:focus {
 }
 
 .resize-project img {
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -549,6 +551,7 @@ button:focus {
 
 .project-featured--img {
   max-width: 500px;
+  height: auto;
 }
 
 .project-featured--content {

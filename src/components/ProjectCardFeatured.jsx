@@ -14,7 +14,7 @@ export default function ProjectCardFeatured(props) {
             
                 <div className="project-featured--left">
 
-                    <img className="project-featured--img project-img gradient-border" src={img} alt="project screenshot" />
+                    <img className="project-featured--img project-img gradient-border" src={img} alt="project screenshot" width="504px" height="267px"/>
                 
                 </div>
 
@@ -39,7 +39,7 @@ export default function ProjectCardFeatured(props) {
             </div>
 
             <div className="project-featured--pics">
-                <img className="project-img gradient-border" src={img2} alt="project screenshot" />
+                <img className="project-img gradient-border" src={img2} alt="project screenshot" width="404px" height="213px"/>
                 <img className="project-img gradient-border" src={img3} alt="project screenshot" />
                 <img className="project-img gradient-border" src={img4} alt="project screenshot" />
             </div>
