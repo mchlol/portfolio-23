@@ -30,6 +30,8 @@ export default function About() {
                     className="about-img" 
                     src={BlobPic} 
                     alt="Michelle in Carlton Gardens" 
+                    width="325px"
+                    height="303px"
                     onMouseEnter={ (e) => handleMouseEnter(e)}
                     onMouseOut={ (e) => handleMouseOut(e)}
                     />

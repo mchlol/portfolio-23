@@ -436,17 +436,17 @@ button:focus {
   text-align: center;
 }
 
+.about-img-container {
+  text-align: center;
+}
+
 .about-img {
   object-fit: contain;
   object-position: center;
   max-width: 80%;
   filter: grayscale(1);
+  height: auto;
 }
-
-/* .about-img-container {
-  text-align: center;
-  align-self: flex-start;
-} */
 
 .about-svg-container, .projects-svg-container {
   display: flex;
