@@ -33,6 +33,12 @@ export default function Nav() {
                         >
                             Projects
                         </NavLink>
+                        <NavLink
+                        to="/blog"
+                        className={ obj => obj.isActive ? "nav-link active-link" : "nav-link"}
+                        >
+                            Blog
+                        </NavLink>
                     </div>
                 </div>
             
