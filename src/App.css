@@ -597,6 +597,81 @@ button:focus {
   color: var(--accentColourStrong);
 }
 
+/* blog */
+.blog-header,
+.blog-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.blog-wrapper img {
+  max-width: 100%;
+}
+
+.blog-wrapper article {
+  border-bottom: 2px solid var(--accentColour);
+  margin: 1em 0;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    color: var(--accentColourStrong);
+  }
+
+  .svg-container {
+    margin: 1rem;
+    font-size: 1.5rem;
+
+    svg path {
+      fill: var(--accentColour)
+    }
+  }
+}
+
+.post-header {
+  border: solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-header-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.post-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
+  padding: 0.25rem;
+
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.post-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  border: solid pink;
+
+  img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
 
 /* Footer */
 
