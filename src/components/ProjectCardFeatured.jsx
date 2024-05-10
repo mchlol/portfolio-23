@@ -13,8 +13,7 @@ export default function ProjectCardFeatured(props) {
             <div className="project-featured--content">
             
                 <div className="project-featured--left">
-
-                    <img className="project-featured--img project-img gradient-border" src={img} alt="project screenshot" width="504px" height="267px"/>
+                    <a href={liveUrl}><img className="project-featured--img project-img gradient-border" src={img} alt="project screenshot" width="504px" height="267px"/></a>
                 
                 </div>
 
