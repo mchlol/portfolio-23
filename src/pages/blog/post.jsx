@@ -4,6 +4,8 @@ import client from "../../client";
 import { PortableText } from "@portabletext/react";
 import imageUrlBuilder from "@sanity/image-url";
 import {getImageDimensions} from '@sanity/asset-utils';
+import { NavLink } from "react-router-dom";
+import { formatDate } from "../../lib/functions";
 
 const builder = imageUrlBuilder(client);
 
@@ -43,6 +45,7 @@ export default function SinglePost() {
             `*[slug.current == $slug]{
                 title, 
                 slug,
+                publishedAt,
                 mainImage{
                     asset->{
                         _id,
@@ -57,9 +60,8 @@ export default function SinglePost() {
         )
         .then( (data) => {
             setPostData(data[0])
-            console.log(postData)
         })
-        .catch(console.error);
+        .catch(err => console.log('Error: ',err));
     },[slug]);
 
     if (!postData) return <div>Loading...</div>;
@@ -77,8 +79,9 @@ export default function SinglePost() {
                         <h2>{postData.title}</h2>
 
                         <div className="post-details">
+                            <span>Posted {formatDate(postData.publishedAt)} by </span>
                             <img src={urlFor(postData.authorImage).width(100).url()} alt={postData.name} /> 
-                            <small>{postData.name}</small>
+                            <strong>{postData.name}</strong>
                         </div>
                     </div>
 
@@ -94,6 +97,9 @@ export default function SinglePost() {
                 : 
                 <p>No author image available.</p>
             }
+            <div className="back-btn-container">
+                <NavLink to="/blog"><button>Back to posts</button></NavLink>
+            </div>
         </main>
     )
 }
