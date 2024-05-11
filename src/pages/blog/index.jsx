@@ -53,7 +53,7 @@ export default function BlogHome() {
                     ?
                     posts.map((post, index) => (
                         <article key={post.slug.current}>
-                            <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
+                            <Link to={"/blog/" + post.slug.current}>
                                 <span key={index}>
                                     {
                                         post.mainImage &&
@@ -62,10 +62,10 @@ export default function BlogHome() {
                                     }
                                     <span>
                                         <h3>{post.title}</h3>
-                                        <em>Posted {formatDate(post.publishedAt)}</em>
                                     </span>
                                 </span>
                             </Link>
+                            <em>Posted {formatDate(post.publishedAt)}</em>
                             <p>{post.intro}</p>
                             <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                                 <button>Read</button>

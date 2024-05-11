@@ -174,7 +174,7 @@ footer ul {
   gap: 2em;
 }
 
-footer  ul {
+footer ul {
   list-style-type: none;
   margin: 0 2em;
 }
@@ -659,6 +659,7 @@ button:focus {
   max-width: 75ch;
   margin: 1.5em auto;
   text-align: justify;
+  padding: 1em;
 
   img {
     width: 100%;

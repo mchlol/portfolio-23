@@ -95,7 +95,7 @@ export default function SinglePost() {
 
                 </article>
                 : 
-                <p>No author image available.</p>
+                <p>No post data available.</p>
             }
             <div className="back-btn-container">
                 <NavLink to="/blog"><button>Back to posts</button></NavLink>
