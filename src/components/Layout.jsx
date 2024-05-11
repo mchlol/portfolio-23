@@ -5,9 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
     return (
-        <div style={ {
-            minHeight: "100vh"
-        }}>
+        <div className="layout">
             <Nav />
             <Outlet />
             <Footer />
