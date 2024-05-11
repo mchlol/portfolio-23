@@ -25,6 +25,7 @@ export default function DarkModeToggle() {
         <motion.div
             onClick={handleClick}
             animate={{ rotate: isRotated ? 360 : 0 }}
+            whileHover={{ scale: 1.7 }}
             transition={ {duration: 0.5 }}
             >
                 <span className="toggle"
