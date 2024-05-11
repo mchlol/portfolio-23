@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Saira:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 :root {
   /* --light: #F5F5F5;
@@ -7,7 +7,7 @@
   --dark: #271d3e; */
   --black: #000;
   --fontHeading: 'DM Mono', monospace;
-  --fontText: 'Saira', sans-serif;
+  --fontText: 'Montserrat', sans-serif;
   --linkColour: palevioletred;
   --gradient: linear-gradient(
     90deg, 
@@ -34,6 +34,8 @@
   --shadowColour: var(--black);
   --boxShadow: 5px 5px 18px var(--shadowColour);
 }
+
+/* general */
 
 html {
   margin: 0;
@@ -100,11 +102,6 @@ h2 {
   font-weight: bold;
 }
 
-main {
-  padding: 1em;
-  min-height: 100vh;
-}
-
 button {
   transition: background-color ease-in-out 150ms;
 }
@@ -113,6 +110,12 @@ button {
   cursor: pointer;
   display: flex;
   place-content: center;
+}
+
+/* utility */
+
+.text-center {
+  text-align: center;
 }
 
 
@@ -401,7 +404,7 @@ button:focus {
 
 .about-section-content {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 1em;
@@ -411,14 +414,7 @@ button:focus {
   padding: 1em;
   line-height: 1.6;
   text-align: center;
-}
-
-.about-section-text ul {
   max-width: 75ch;
-  text-align: justify;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .about-section-text a:hover {
@@ -444,7 +440,6 @@ button:focus {
   object-fit: contain;
   object-position: center;
   max-width: 80%;
-  filter: grayscale(1);
   height: auto;
 }
 
@@ -598,6 +593,7 @@ button:focus {
 }
 
 /* blog */
+
 .blog-header,
 .blog-wrapper {
   margin: 0 auto;
@@ -631,7 +627,6 @@ button:focus {
 }
 
 .post-header {
-  border: solid pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -649,8 +644,8 @@ button:focus {
   justify-content: flex-start;
   align-items: center;
   width: fit-content;
-  gap: 1rem;
-  padding: 0.25rem;
+  gap: 0.25em;
+  padding: 0.25em;
 
   img {
     border-radius: 50%;
@@ -661,16 +656,20 @@ button:focus {
 }
 
 .post-content {
-  width: 80%;
-  margin: 0 auto;
+  max-width: 75ch;
+  margin: 1.5em auto;
   text-align: justify;
-  border: solid pink;
 
   img {
     width: 100%;
     max-height: 300px;
     object-fit: contain;
   }
+}
+
+.back-btn-container {
+  margin: 1.5em 0;
+  text-align: center;
 }
 
 /* Footer */
