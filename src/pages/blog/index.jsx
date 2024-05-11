@@ -31,7 +31,7 @@ export default function BlogHome() {
             
 
         })
-        .catch(console.error);
+        .catch(err => console.log('Error: ',err));
 
 
     },[]);
@@ -41,39 +41,45 @@ export default function BlogHome() {
     return (
         <main>
 
-                <h2 className="section-header">mchlog</h2>
+                <h2 className="section-header">blog</h2>
 
                 <div className="blog-wrapper text-center">
-                <p>Mchlol + blog = mchlog.</p>
                 {
                     loading
                     ? <h3>Loading...</h3>
                     :
-                    posts
+                    posts.length > 0
                     ?
-                    posts.map((post, index) => (
-                        <article key={post.slug.current}>
-                            <Link to={"/blog/" + post.slug.current}>
-                                <span key={index}>
-                                    {
-                                        post.mainImage &&
-                                        <img src={post.mainImage.asset.url}
-                                        alt="" />
-                                    }
-                                    <span>
-                                        <h3>{post.title}</h3>
-                                    </span>
-                                </span>
-                            </Link>
-                            <em>Posted {formatDate(post.publishedAt)}</em>
-                            <p>{post.intro}</p>
-                            <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
-                                <button>Read</button>
-                            </Link>
-                        </article>
-                    ))
-                    :
-                    'No posts to display'
+                    <section className="posts-wrapper">
+                        {posts.map((post) => (
+                            <article key={post.slug.current} className="gradient-border">
+
+                                <div className="post-header">
+                                    <Link to={"/blog/" + post.slug.current}>
+                                        {
+                                            post.mainImage &&
+                                            <img src={post.mainImage.asset.url}
+                                            alt="blog post preview image" />
+                                        }
+                                    </Link>
+                                </div>
+
+                                <div className="post-preview">
+                                    <div className="post-preview-header">
+                                        <h3><Link to={"/blog/" + post.slug.current}>{post.title}</Link></h3>
+                                        <small>Posted {formatDate(post.publishedAt)}</small>
+                                    </div>
+                                    <p>{post.intro}</p>
+                                    <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
+                                        <button>Read</button>
+                                    </Link>
+                                </div>
+
+                            </article>
+                        ))}
+                    </section>
+                    
+                    : <p className="no-posts-wrapper">No posts to display.</p>
                 }
                 </div>
         </main>

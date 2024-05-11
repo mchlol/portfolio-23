@@ -64,8 +64,6 @@ export default function SinglePost() {
         .catch(err => console.log('Error: ',err));
     },[slug]);
 
-    if (!postData) return <div>Loading...</div>;
-
     return (
         <main>
             {
@@ -73,20 +71,24 @@ export default function SinglePost() {
                 ? 
                 <article className="single-post-wrapper">
 
-                    <div className="post-header">              
-                        <img className="post-header-img" src={urlFor(postData.mainImage).url()} alt={postData.title} />
+                    <div className="single-post-header">              
+                        <img className="single-post-header-img" src={urlFor(postData.mainImage).url()} alt={postData.title} />
 
-                        <h2>{postData.title}</h2>
+                        <div className="single-post-details">
+                            <h2>{postData.title}</h2>
 
-                        <div className="post-details">
+                            <div className="date-author-wrap">
                             <span>Posted {formatDate(postData.publishedAt)} by </span>
-                            <img src={urlFor(postData.authorImage).width(100).url()} alt={postData.name} /> 
-                            <strong>{postData.name}</strong>
+
+                                <img className="author-img" src={urlFor(postData.authorImage).width(100).url()} alt={postData.name} />
+                                
+                                <strong>{postData.name}</strong>
+                            </div>
                         </div>
                     </div>
 
 
-                    <div className="post-content">
+                    <div className="single-post-content">
                         <PortableText
                             value={postData.body}
                             components={myComponents}
@@ -95,7 +97,9 @@ export default function SinglePost() {
 
                 </article>
                 : 
-                <p>No post data available.</p>
+                <article className="no-post-wrapper">
+                    <p>No post data available.</p>
+                </article>
             }
             <div className="back-btn-container">
                 <NavLink to="/blog"><button>Back to posts</button></NavLink>
