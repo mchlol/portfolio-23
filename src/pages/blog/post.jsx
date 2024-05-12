@@ -32,11 +32,11 @@ const imageComponent = ({value}) => {
     )
 }
 
-const codeComponent = ({value}) => {
-    console.log(value)
+const codeComponent = (props) => {
+    console.log(props)
     return (
         <SyntaxHighlighter language="javascript" style={tomorrow}>
-            {value.code}
+            {props.value.code}
         </SyntaxHighlighter>
     )
 }
