@@ -109,6 +109,14 @@ h2 {
   font-weight: bold;
 }
 
+.section-header {
+  background: var(--accentColour);
+  margin: 0 0 1em 0;
+  padding: 1em;
+  border-bottom: 5px solid var(--accentColourStrong);
+  border-top: 5px solid var(--accentColourStrong);
+}
+
 button {
   transition: background-color ease-in-out 150ms;
 }
@@ -724,6 +732,17 @@ button:focus {
     max-height: 300px;
     object-fit: contain;
   }
+}
+
+.code-block {
+  background: #181818;
+  color: #f5f5f5;
+  border-radius: 8px;
+  overflow-x: scroll;
+  max-width: 80%;
+  min-width: 100px;
+  padding: 1rem;
+  margin: 1rem auto;
 }
 
 .back-btn-container {
