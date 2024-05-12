@@ -6,6 +6,9 @@ import imageUrlBuilder from "@sanity/image-url";
 import {getImageDimensions} from '@sanity/asset-utils';
 import { NavLink } from "react-router-dom";
 import { formatDate } from "../../lib/functions";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 
 const builder = imageUrlBuilder(client);
 
@@ -32,11 +35,9 @@ const imageComponent = ({value}) => {
 const codeComponent = ({value}) => {
     console.log(value)
     return (
-        <pre className="code-block">
-            <code>
-                {value.code}
-            </code>
-        </pre>
+        <SyntaxHighlighter language="javascript" style={tomorrow}>
+            {value.code}
+        </SyntaxHighlighter>
     )
 }
 
