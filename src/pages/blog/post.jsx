@@ -29,14 +29,27 @@ const imageComponent = ({value}) => {
     )
 }
 
+const codeComponent = ({value}) => {
+    console.log(value)
+    return (
+        <pre className="code-block">
+            <code>
+                {value.code}
+            </code>
+        </pre>
+    )
+}
+
 const myComponents = {
     types: {
         image: imageComponent,
+        code: codeComponent,
     }
 }
 
 export default function SinglePost() {
 
+    
     const [postData, setPostData] = useState(null);
     const { slug } = useParams();
 
@@ -59,6 +72,7 @@ export default function SinglePost() {
             { slug }
         )
         .then( (data) => {
+            console.log('data',data)
             setPostData(data[0])
         })
         .catch(err => console.log('Error: ',err));
