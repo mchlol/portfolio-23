@@ -711,7 +711,7 @@ button:focus {
   align-items: center;
   width: fit-content;
   gap: 0.25em;
-  padding: 0.25em;
+  padding-bottom: 1em;
   width: 100%;
   background: var(--post-gradient);
 }
