@@ -79,6 +79,7 @@ export default function SinglePost() {
 
     return (
         <main>
+        <h2 className="section-header">blog</h2>
             {
                 !loading
                 ?

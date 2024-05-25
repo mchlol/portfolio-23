@@ -48,6 +48,7 @@ html {
 #root {
   margin: 0;
   min-height: 100%;
+  background-color: inherit;
 }
 
 .layout {
@@ -92,6 +93,10 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 ul {
   list-style-type: "\2726   ";
 }
@@ -124,8 +129,7 @@ h2 {
 }
 
 .section-header {
-  background: var(--accentColour);
-  margin: 0 0 1em 0;
+  margin: 0;
   padding: 1em;
   border-bottom: 5px solid var(--accentColourStrong);
   border-top: 5px solid var(--accentColourStrong);
@@ -147,6 +151,10 @@ button {
   text-align: center;
 }
 
+.glass {
+  background-color:rgba(245,245,245,0.8);
+  backdrop-filter: blur(5px);
+}
 
 /* nav */
 
@@ -208,11 +216,6 @@ footer ul {
   justify-content: space-evenly;
   padding: 0;
   gap: 2em;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0 2em;
 }
 
 .nav--left {
@@ -443,6 +446,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  margin-top: 1em;
 }
 
 .about-section-text {
@@ -634,9 +638,12 @@ button:focus {
 
 /* blog */
 
-.blog-header,
-.blog-wrapper {
+.blog-header {
   margin: 0 auto;
+}
+
+.blog-wrapper {
+  margin: 1em 0;
 }
 
 .posts-wrapper {
@@ -786,7 +793,10 @@ footer {
   border-top: 1px solid var(--accentColour);
 }
 
-
+footer ul {
+  list-style-type: none;
+  margin: 0 2em;
+}
 
 /* silly stuff */
 
