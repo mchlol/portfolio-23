@@ -696,6 +696,18 @@ button:focus {
 
 /* single post */
 
+.loading-wrapper {
+  display: grid;
+  place-content: center;
+  margin: 2em;
+}
+
+.loading {
+  width: fit-content;
+  font-size: 2rem;
+  color: var(--linkColour);
+}
+
 .no-post-wrapper {
   display: flex;
   justify-content: center;

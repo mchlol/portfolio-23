@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import { formatDate } from "../../lib/functions";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import Loading from "../../components/Loading";
 
 
 const builder = imageUrlBuilder(client);
@@ -122,7 +123,8 @@ export default function SinglePost() {
                     <article className="no-post-wrapper">
                         <p>No post data available.</p>
                     </article>
-                : <p>Loading...</p>
+                : 
+                <Loading />
             }
             <div className="back-btn-container">
                 <NavLink to="/blog"><button>Back to posts</button></NavLink>
