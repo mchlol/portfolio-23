@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import createClient from "../../client";
 import { formatDate } from "../../lib/functions";
+import Loading from "../../components/Loading";
 
 export default function BlogHome() {
 
@@ -45,8 +46,8 @@ export default function BlogHome() {
 
                 <div className="blog-wrapper text-center">
                 {
-                    loading
-                    ? <h3>Loading...</h3>
+                    !loading
+                    ? <Loading />
                     :
                     posts.length > 0
                     ?

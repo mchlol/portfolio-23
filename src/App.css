@@ -699,13 +699,14 @@ button:focus {
 .loading-wrapper {
   display: grid;
   place-content: center;
-  margin: 2em;
+  margin: 2em auto;
 }
 
 .loading {
   width: fit-content;
   font-size: 2rem;
   color: var(--linkColour);
+  margin: 0 auto;
 }
 
 .no-post-wrapper {

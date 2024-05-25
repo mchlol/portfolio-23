@@ -11,6 +11,7 @@ export default function Loading() {
             >
                 <IoThumbsUpOutline />
             </motion.div>
+            <h4>Loading...</h4>
         </div>
     )
 }
