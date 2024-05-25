@@ -42,10 +42,19 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 #root {
   margin: 0;
+  min-height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 body {
@@ -53,11 +62,7 @@ body {
   margin: 0;
   background: var(--backgroundColour);
   color: var(--textColour);
-}
-
-main {
-  padding-bottom: 6rem;
-  min-height: calc(100vh - 9rem)
+  height: 100%;
 }
 
 a {
@@ -773,9 +778,6 @@ blockquote::before {
 footer {
   width: 100%;
   height: 4.5rem;
-  position: fixed;
-  bottom: 0;
-  margin-top: 4.5rem;
   text-align: center;
   background-color: var(--backgroundColour);
   display: flex;
