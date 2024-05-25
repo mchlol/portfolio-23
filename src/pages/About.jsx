@@ -35,7 +35,7 @@ export default function About() {
                     <p>In my day job working in print many years later, I took over the company's WordPress site, diving into theme customization and SEO. This reignited a passion for coding,and I thought why not give it a crack? This trail lead through The Odin Project, JavaScript development at General Assembly, and Scrimba's Front End Developer Career Path. Me and everyone else.</p> 
                     <p>Now knee-deep in code, I'm exploring APIs, NextJS, Node, Python, and beyond.<br />
                     I love to learn and I love the web. 🤝 </p>
-                    <p>Outside the digital realm, I dabble in learning French, font appreciation, gaming, baking, and the occasional embroidery.</p>
+                    <p>Outside the digital realm, I dabble in <em>apprendre à parler français</em>, font appreciation, gaming, baking, and the occasional embroidery.</p>
                 </div>
 
             </div>
