@@ -46,7 +46,7 @@ export default function BlogHome() {
 
                 <div className="blog-wrapper text-center">
                 {
-                    !loading
+                    loading
                     ? <Loading />
                     :
                     posts.length > 0
