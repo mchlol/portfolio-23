@@ -66,13 +66,16 @@ export default function SinglePost() {
                     }
                 },
                 body,
-                "name": author->name,
+                "category": category->title,
+                tags,
+                "author": author->name,
                 "authorImage": author->image,
             }`,
             { slug }
         )
         .then( (data) => {
             setPostData(data[0]);
+            console.log(data[0]);
             setLoading(false);
         })
         .catch(err => console.log('Error: ',err));
@@ -98,14 +101,24 @@ export default function SinglePost() {
                             <div className="single-post-details">
                                 <h2>{postData.title}</h2>
 
-                                <div className="date-author-wrap">
-                                <span>Posted {formatDate(postData.publishedAt)} by </span>
-                                {
-                                    postData.authorImage &&
-                                    <img className="author-img" src={urlFor(postData.authorImage).width(100).url()} alt={postData.name} />
-                                }
-                                    
-                                    <strong>{postData.name}</strong>
+                                <div className="data-wrapper">
+                                    <p>Posted <span className="post-data">{formatDate(postData.publishedAt)}</span> in <span className="post-data">{postData.category}</span> by
+                                        <span className="post-author">
+                                            {
+                                                postData.authorImage &&
+                                                <img className="author-img" src={urlFor(postData.authorImage).width(100).url()} alt={postData.author} />
+                                            }
+                                                
+                                            <strong>{postData.author}</strong>
+                                        </span>
+                                    </p>
+                                        {
+                                            postData.tags
+                                            &&
+                                            <p>
+                                            {postData.tags.map(tag => <span className="post-data post-tag" key={tag}>{tag}</span>)}
+                                            </p>
+                                        }
                                 </div>
                             </div>
                         </div>
