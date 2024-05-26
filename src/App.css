@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* --light: #F5F5F5;
@@ -8,7 +8,6 @@
   --black: #000;
   --fontHeading: 'DM Mono', monospace;
   --fontText: 'Montserrat', sans-serif;
-  --linkColour: palevioletred;
   --gradient: linear-gradient(
     90deg, 
     palevioletred, 
@@ -22,9 +21,11 @@
   --accentColour: #E8D7FF;
   --accentColourStrong: #7F5DC7;
   --textColour: #271d3e;
+  --linkColour: hsl(340, 57%, 55%);
   --shadowColour: var(--accentColourStrong);
   --boxShadow: 5px 5px 18px var(--shadowColour);
   --post-gradient: linear-gradient(to bottom, var(--accentColour), var(--backgroundColour));
+  --quote-bg: rgba(232, 215, 255, 0.5);
 }
 
 .dark-mode {
@@ -32,8 +33,10 @@
   --accentColour: #7F5DC7;
   --accentColourStrong: #E8D7ff;
   --textColour: #f5f5f5;
+  --linkColour: hsl(340, 57%, 75%);
   --shadowColour: var(--black);
   --boxShadow: 5px 5px 18px var(--shadowColour);
+  --quote-bg: rgba(127, 93, 199, 0.3);
 }
 
 /* general */
@@ -126,6 +129,7 @@ pre {
 h2 {
   text-align: center;
   font-weight: bold;
+  padding: 0 0.5em;
 }
 
 .section-header {
@@ -154,6 +158,12 @@ button {
 .glass {
   background-color:rgba(245,245,245,0.8);
   backdrop-filter: blur(5px);
+}
+
+.post-data {
+  color: var(--accentColourStrong);
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
 /* nav */
@@ -744,10 +754,18 @@ button:focus {
   background: var(--post-gradient);
 }
 
-.date-author-wrap {
+.data-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.5em;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+  .post-tag {
+    margin: 0 0.5rem;
+  }
 }
 
 .author-img {
@@ -755,6 +773,7 @@ button:focus {
   object-fit: cover;
   width: 25px;
   height: 25px;
+  padding: 0 0.25rem;
 }
 
 .single-post-content {
@@ -770,22 +789,25 @@ button:focus {
   }
 }
 
-blockquote::before {
-  content: '*';
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
-  color: var(--accentColourStrong);
+blockquote {
+  padding: 1em;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--quote-bg);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: 500;
+  text-align: left;
 }
 
-.code-block {
-  background: #181818;
-  color: #f5f5f5;
-  border-radius: 8px;
-  overflow-x: scroll;
-  max-width: 80%;
-  min-width: 100px;
-  padding: 1rem;
-  margin: 1rem auto;
+blockquote::before {
+  content: '*';
+  position: absolute;
+  left: -3rem;
+  top: -1rem;
+  padding: 1.5rem 1rem;
+  font-size: 3rem;
+  color: var(--accentColourStrong);
 }
 
 .back-btn-container {
