@@ -17,10 +17,15 @@ export default function Nav() {
                             <div className="logo-svg-container">
                                 <HiSparkles />
                             </div>
-                            Home
                         </NavLink>
                     </div>
                     <div className="links">
+                        <NavLink
+                        to="/"
+                        className={ (obj) => obj.isActive ? "nav-link active-link" : 'nav-link'}
+                        >
+                            Home
+                        </NavLink>
                         <NavLink
                         to="/about"
                         className={ (obj) => obj.isActive ? "nav-link active-link" : 'nav-link'}
@@ -32,6 +37,12 @@ export default function Nav() {
                         className={ obj => obj.isActive ? "nav-link active-link" : 'nav-link'}
                         >
                             Projects
+                        </NavLink>
+                        <NavLink
+                        to="/blog"
+                        className={ obj => obj.isActive ? "nav-link active-link" : "nav-link"}
+                        >
+                            Blog
                         </NavLink>
                     </div>
                 </div>

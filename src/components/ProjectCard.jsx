@@ -9,7 +9,7 @@ export default function ProjectCard(props) {
         <div className="resize-project project-img-container gradient-border">
             <h3>{title}</h3>
 
-            <img className="project-img" src={img} alt="" width="300px" height="250px"/>
+            <a href={liveUrl}><img className="project-img" src={img} alt="" width="300px" height="250px"/></a>
 
             <p>{description}</p>
 
