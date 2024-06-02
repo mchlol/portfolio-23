@@ -1,8 +1,8 @@
 import React from "react";
-import gamelist1 from "../assets/p_gamelist_1.png";
-import gamelist2 from "../assets/p_gamelist_2.png";
-import gamelist3 from "../assets/p_gamelist_3.png";
-import gamelist4 from "../assets/p_gamelist_4.png";
+import gamelist1 from "../assets/p_gamelist2_1.png";
+import gamelist2 from "../assets/p_gamelist2_2.png";
+import gamelist3 from "../assets/p_gamelist2_3.png";
+import gamelist4 from "../assets/p_gamelist2_4.png";
 import mj1 from "../assets/p_mj_1.png";
 import mj2 from "../assets/p_mj_2.png";
 import mj3 from "../assets/p_mj_3.png";
@@ -28,15 +28,14 @@ export default function Projects() {
                 
                 <ProjectCardFeatured 
                     title="GameList"
-                    img={gamelist3}
+                    img={gamelist2}
                     description={<p>This was my final project for JavaScript Development at General Assembly. I created a web app using data from the RAWG.io API, a videogame database. Users can search for games from across different platforms, and save to a wishlist or favourites. I created this because while I was in the program a game I really wanted to play came out but I didn't have time to play it!<br />
-                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify. <br />
-                    This project is continuously under construction while I work through a backlog of features I want to add.</p>}
+                    Originally built with React & React Router, then rebuilt in Next, with continuous deployment from a GitHub repo to Netlify.</p>}
                     codeUrl="https://github.com/mchlol/next-game-list"
                     liveUrl="https://mchlol-gamelist.netlify.app/"
-                    img2={gamelist1}
-                    img3={gamelist2}
-                    img4={gamelist4}
+                    img2={gamelist4}
+                    img3={gamelist1}
+                    img4={gamelist3}
                 />
 
                 <ProjectCardFeatured 
