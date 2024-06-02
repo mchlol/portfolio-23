@@ -75,7 +75,6 @@ export default function SinglePost() {
         )
         .then( (data) => {
             setPostData(data[0]);
-            console.log(data[0]);
             setLoading(false);
         })
         .catch(err => console.log('Error: ',err));
