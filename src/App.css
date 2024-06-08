@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  /* --light: #F5F5F5;
-  --accent: #E8D7FF;
-  --darker-accent: #7F5DC7;
-  --dark: #271d3e; */
   --black: #000;
   --fontHeading: 'DM Mono', monospace;
   --fontText: 'Montserrat', sans-serif;
