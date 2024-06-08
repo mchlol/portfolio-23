@@ -5,7 +5,7 @@ import { HiSparkles } from "react-icons/hi2";
 export default function Nav() {
 
     return (
-            <nav className="navMobile visible">
+            <nav className="navMobile visible glass">
 
                 <div className="nav--left">
                     <div className="nav-logo-wrap">
