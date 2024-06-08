@@ -5,8 +5,7 @@ import { HiSparkles } from "react-icons/hi2";
 export default function Nav() {
 
     return (
-        <div className="visible">
-            <nav className="navMobile">
+            <nav className="navMobile visible">
 
                 <div className="nav--left">
                     <div className="nav-logo-wrap">
@@ -52,6 +51,5 @@ export default function Nav() {
                     <Toggle />
                 </div>
             </nav>
-        </div>
     )
 }
