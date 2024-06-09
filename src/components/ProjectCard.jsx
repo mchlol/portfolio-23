@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdCode, MdVisibility } from "react-icons/md";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 export default function ProjectCard(props) {
 
@@ -7,9 +8,14 @@ export default function ProjectCard(props) {
 
     return (
         <div className="resize-project project-img-container gradient-border">
-            <h3>{title}</h3>
+            <h3>
+                <a href={liveUrl} target="_blank">
+                    {title}
+                    <RxOpenInNewWindow />
+                </a>
+            </h3>
 
-            <a href={liveUrl}><img className="project-img" src={img} alt="" width="300px" height="250px"/></a>
+            <a href={liveUrl} target="_blank"><img className="project-img" src={img} alt="" width="300px" height="250px"/></a>
 
             <p>{description}</p>
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { MdCode, MdVisibility } from "react-icons/md";
 import { HiSparkles } from "react-icons/hi2";
+import { RxOpenInNewWindow } from "react-icons/rx";
+
 
 export default function ProjectCardFeatured(props) {
 
@@ -18,7 +20,12 @@ export default function ProjectCardFeatured(props) {
                 </div>
 
                 <div className="project-featured--right">
-                    <h3>{title}</h3>
+                    <h3>
+                        <a href={liveUrl} target="_blank">
+                            {title}
+                            <RxOpenInNewWindow />
+                        </a>
+                    </h3>
                     {description}
                     <div className="project-btns">
                         <a href={liveUrl} target="_blank"><button><MdVisibility />
