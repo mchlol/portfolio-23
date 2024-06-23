@@ -517,6 +517,9 @@ button:focus {
   background-color: var(--backgroundColour);
   color: var(--textColour);
   margin: 0;
+  h3 svg {
+    font-size: 0.9rem;
+  }
 }
 
 .projects-section .svg-container {
@@ -573,7 +576,8 @@ button:focus {
   max-width: 300px;
   flex: 0 1 auto;
   border-radius: 5px;
-}
+  }
+
 
 .resize-project img {
   width: 100%;
