@@ -133,8 +133,8 @@ h2 {
 .section-header {
   margin: 0;
   padding: 1em;
-  border-bottom: 5px solid var(--accentColourStrong);
-  border-top: 5px solid var(--accentColourStrong);
+  border-bottom: 1px solid var(--accentColourStrong);
+  border-top: 1px solid var(--accentColourStrong);
 }
 
 button {
