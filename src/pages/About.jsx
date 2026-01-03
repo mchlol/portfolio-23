@@ -7,7 +7,8 @@ export default function About() {
 
     return (
         <main className="about-section">
-        <ScrollToTop />
+        <h2>Under Construction</h2>
+        {/* <ScrollToTop />
             
             <h2 className="section-header">About</h2>
 
@@ -40,7 +41,7 @@ export default function About() {
                     <p>This humble site is built with <a href="https://react.dev" target="_blank" rel="noopener noreferrer">React</a>, <a href="https://reactrouter.com" target="_blank" rel="noopener noreferrer">React Router</a>, <a href="https://www.sanity.io" target="_blank" rel="noopener noreferrer">Sanity CMS</a> (for the blog), and a sprinkle of <a href="https://www.framer.com/motion" target="_blank" rel="noopener noreferrer">Framer Motion</a>. </p>
                 </div>
 
-            </div>
+            </div> */}
 
         </main>
         

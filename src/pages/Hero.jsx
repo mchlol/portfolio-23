@@ -15,7 +15,8 @@ export default function Hero() {
     return (
     <>
     <main className="hero">
-        <ScrollToTop />
+        <h2>Under Construction</h2>
+        {/* <ScrollToTop />
 
         <div className="hero--content">
 
@@ -62,7 +63,7 @@ export default function Hero() {
             
             </div>
             
-        </div>
+        </div> */}
 
     </main>
 </>

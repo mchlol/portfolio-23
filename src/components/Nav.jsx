@@ -18,7 +18,7 @@ export default function Nav() {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="links">
+                    {/* <div className="links">
                         <NavLink
                         to="/"
                         className={ (obj) => obj.isActive ? "nav-link active-link" : 'nav-link'}
@@ -43,7 +43,7 @@ export default function Nav() {
                         >
                             Blog
                         </NavLink>
-                    </div>
+                    </div> */}
                 </div>
             
 

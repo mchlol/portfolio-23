@@ -21,7 +21,8 @@ import ProjectCardFeatured from "../components/ProjectCardFeatured";
 export default function Projects() {
     return (
         <main className="projects-section">
-            <ScrollToTop />
+        <h2>Under Construction</h2>
+            {/* <ScrollToTop />
             <h2 className="section-header">Projects</h2>
 
             <div className="project-wrapper">
@@ -63,7 +64,7 @@ export default function Projects() {
                     
                 </div>
                     
-            </div>
+            </div> */}
 
         </main>
     )

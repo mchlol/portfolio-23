@@ -41,8 +41,9 @@ export default function BlogHome() {
 
     return (
         <main>
+        <h2>Under Construction</h2>
 
-                <h2 className="section-header">blog</h2>
+                {/* <h2 className="section-header">blog</h2>
 
                 <div className="blog-wrapper text-center">
                 {
@@ -82,7 +83,7 @@ export default function BlogHome() {
                     
                     : <p className="no-posts-wrapper">No posts to display.</p>
                 }
-                </div>
+                </div> */}
         </main>
     )
 };
